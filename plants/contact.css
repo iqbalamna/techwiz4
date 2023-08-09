@@ -1,0 +1,108 @@
+/* google fonts */
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,600;1,100;1,300&display=swap');
+
+
+:root{
+    --header-height:3.5rem;
+
+/* colors */
+--hue:152;
+--first-color:hsl(var(--hue),24%, 32%);
+--first-color-alt: hsl(var(--hue),24%,28%);
+--first-color-light:hsl(var(--hue),24%,66%);
+--first-color-lighten: hsl(var(--hue),24%,92%);
+--title-color: hsl(var(--hue),4%,15%);
+--text-cokor:hsl(var(--hue),4%,35%);
+--text-color-light: hsl(var(--hue),4%,55%);
+--body-color:hsl(var(--hue),0%,100%);
+--container-color:#fff;
+
+/* font & tyography */
+
+--body-font:font-family: 'Poppins', sans-serif;
+
+
+
+}
+
+
+
+
+
+
+
+/* contact page start */
+
+.contact_container{
+    row-gap:3.5rem ;
+}
+
+.contact_data{
+     display: grid;
+     row-gap: 2rem;
+}
+.contact_subtitle{
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+    color: var(--text-color);
+    margin-bottom: var(--mb-0-5);
+}
+.contact_discription{
+    display: inline-flex;
+    align-items: center;
+    column-gap: .5rem;
+    color: var(--title-color);
+    font-weight: var(--font-medium);
+}
+.contact_icon{
+    font-size: 1.25rem;
+}
+.contact_inputs{
+    display: grid;
+    row-gap: 2rem;
+    margin-bottom: var(--mb-2-5);
+}
+.contact_content{
+    position: relative;
+    height: 3rem;
+    border-bottom: 1px solid var(--text-color-light);
+}
+.contact_input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 1rem 1rem 1rem 0;
+    background: none;
+    border: none;
+    outline: none;
+    z-index: 1;
+}
+.contact_label{
+    position: absolute;
+    top: .75rem;
+    width: 100%;
+    font-size: var(--smalll-font-size);
+    color: var(--text-color-light);
+    transition: .3s;
+}
+.contact_area{
+    height: 7rem;
+}
+.contact_area textarea{
+    resize: none;
+}
+.contact_input:focus + .contact_label{
+    top: -.75rem;
+    left: 0;
+    font-size: var(--smaller-font-size);
+    z-index: 10;
+}
+.contact-input:not(:placeholder-shown).contact_input:not(:focus) + .contact_label{
+    top: -.75rem;
+    
+    font-size: var(--smaller-font-size);
+    z-index: 10;
+}
